@@ -1,10 +1,10 @@
 from flask import Flask
 import csv
-from get_gpa_data import *
+import get_gpa_data
 app = Flask(__name__)
 
 fd = open("dataSource/uiuc-gpa-dataset.csv", 'r')
-csvReader = csv.reader(fd, delimter='')
+csvReader = csv.reader(fd, delimiter=',')
 
 
 @app.route('/')
@@ -14,7 +14,7 @@ def hello_world():
 
 @app.route('/api/course', methods=['GET'])
 def get_course_gpa():
-    return get_course_gpa.get_frist_row(csvReader)
+    return get_gpa_data.get_frist_row(csvReader)
 
 
 @app.route('/api/testing', methods=['GET'])

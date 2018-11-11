@@ -1,4 +1,5 @@
 import csv
+from flask import *
 
 
 def get_frist_row(csvReader):
@@ -6,4 +7,4 @@ def get_frist_row(csvReader):
     for row in csvReader:
         retval = row
         break
-    return retval
+    return jsonify(retval)
