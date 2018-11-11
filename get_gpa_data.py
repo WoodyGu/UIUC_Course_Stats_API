@@ -28,7 +28,7 @@ def get_course_info(subject, number, df):
         instructor_course_gpa_dict = instructor_course_gpa.to_dict()
         instructor_course_gpa_list = []
         for elem in instructor_course_gpa_dict.items():
-            instructor_course_gpa_list.append({'name': elem[0], 'average_gpa': elem[1]})
+            instructor_course_gpa_list.append({'name': elem[0], 'Average Grade': elem[1]})
         retval['Instructors'] = instructor_course_gpa_list
         return retval
     else:
