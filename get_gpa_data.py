@@ -17,10 +17,10 @@ def get_course_info(subject, number, df):
     all_offerings = df[is_target]
     if not all_offerings.empty:
         average_gpa = round(all_offerings['Average Grade'].mean(), 2)
-        grouped = all_offerings['Average Grade'].groupby(df['Primary Instructor'])
+        grouped = all_offerings['Average Grade'].groupby(all_offerings['Primary Instructor'])
         instructor_course_gpa = grouped.mean().round(2)
         retval = {}
-        retval['status'] = '200 OK'
+        retval['Status'] = '200 OK'
         retval['Subject'] = subject
         retval['Number'] = number
         retval['Course Title'] = all_offerings['Course Title'].values.tolist()[0]
@@ -28,7 +28,7 @@ def get_course_info(subject, number, df):
         instructor_course_gpa_dict = instructor_course_gpa.to_dict()
         instructor_course_gpa_list = []
         for elem in instructor_course_gpa_dict.items():
-            instructor_course_gpa_list.append({elem[0]: elem[1]})
+            instructor_course_gpa_list.append({'name': elem[0], 'average_gpa': elem[1]})
         retval['Instructors'] = instructor_course_gpa_list
         return retval
     else:
@@ -36,5 +36,19 @@ def get_course_info(subject, number, df):
 
 
 # schema: {name, average_GPA, course_taught: []}
-def get_instructor_info():
-    return None
+def get_instructor_info(name, df):
+    is_target = df['Primary Instructor'] == name
+    all_taught = df[is_target]
+    if not all_taught.empty:
+        average_gpa = round(all_taught['Average Grade'].mean(), 2)
+        grouped = all_taught.groupby(['Subject', 'Number'], as_index=False)
+        instructor_course_gpa = grouped['Average Grade'].mean().round(2)
+        retval = {}
+        retval['Status'] = '200 OK'
+        retval['Name'] = name
+        retval['Average GPA'] = average_gpa
+        instructor_course_gpa_dict = instructor_course_gpa.to_dict('records')
+        retval['Course Taught'] = instructor_course_gpa_dict
+        return retval
+    else:
+        return abort(404)

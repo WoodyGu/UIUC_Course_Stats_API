@@ -14,6 +14,7 @@ df['Term'] = df['Term'].astype('str')
 df['YearTerm'] = df['YearTerm'].astype('str')
 df['Subject'] = df['Subject'].astype('str')
 df['Course Title'] = df['Course Title'].astype('str')
+df['Primary Instructor'] = df['Primary Instructor'].astype('str')
 
 
 @app.route('/')
@@ -33,8 +34,8 @@ def return_testing_message():
 
 
 @app.route('/api/instructor/<string:name>', methods=['GET'])
-def get_instructor_gpa(name):
-    return "200 OK!"
+def get_instructor_gpa_accurate(name):
+    return jsonify(get_gpa_data.get_instructor_info(name, df))
 
 
 if __name__ == '__main__':
