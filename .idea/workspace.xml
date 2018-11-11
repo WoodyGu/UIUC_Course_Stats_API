@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2341223a-77d2-4999-9081-31de7f9ae66b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/get_gpa_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_gpa_data.py" afterDir="false" />
     </list>
+    <ignored path="Tests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,81 +14,96 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/fa18_cs242_final_project$fa18_cs242_final_project.coverage" NAME="fa18-cs242-final-project Coverage Results" MODIFIED="1541917806298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/fa18_cs242_final_project$Unittests_for_test_api_TestAPI_test_get_courseGPA.coverage" NAME="Unittests for test_api.TestAPI.test_get_courseGPA Coverage Results" MODIFIED="1541973619847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
+    <SUITE FILE_PATH="coverage/fa18_cs242_final_project$fa18_cs242_final_project.coverage" NAME="fa18-cs242-final-project Coverage Results" MODIFIED="1541974887600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/fa18_cs242_final_project$Unittests_for_test_api_TestAPI_test_get_instructorNotFound.coverage" NAME="Unittests for test_api.TestAPI.test_get_instructorNotFound Coverage Results" MODIFIED="1541974968868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
+    <SUITE FILE_PATH="coverage/fa18_cs242_final_project$Unittests_for_test_api_TestAPI_test_get_instructor1.coverage" NAME="Unittests for test_api.TestAPI.test_get_instructor1 Coverage Results" MODIFIED="1541974972601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
+    <SUITE FILE_PATH="coverage/fa18_cs242_final_project$Unittests_for_test_api_TestAPI_test_get_instructor2.coverage" NAME="Unittests for test_api.TestAPI.test_get_instructor2 Coverage Results" MODIFIED="1541975230936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
+    <SUITE FILE_PATH="coverage/fa18_cs242_final_project$Unittests_for_test_api_TestAPI.coverage" NAME="Unittests for test_api.TestAPI Coverage Results" MODIFIED="1541975257998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
+    <SUITE FILE_PATH="coverage/fa18_cs242_final_project$Unittests_for_test_api_TestAPI_test_get_courseName.coverage" NAME="Unittests for test_api.TestAPI.test_get_courseName Coverage Results" MODIFIED="1541973977019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
+    <SUITE FILE_PATH="coverage/fa18_cs242_final_project$Unittests_for_test_api_TestAPI_test_get_courseNotFound.coverage" NAME="Unittests for test_api.TestAPI.test_get_courseNotFound Coverage Results" MODIFIED="1541974629052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-821765195">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2241" />
+          <entry key="csv" value="16" />
+          <entry key="py" value="3124" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2241" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="Python" value="3124" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Procfile" value="1" />
           <entry key="cfg" value="1" />
-          <entry key="csv" value="9" />
-          <entry key="py" value="2" />
+          <entry key="csv" value="14" />
+          <entry key="py" value="4" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Ini" value="1" />
-          <entry key="PLAIN_TEXT" value="14" />
-          <entry key="Python" value="2" />
+          <entry key="PLAIN_TEXT" value="19" />
+          <entry key="Python" value="4" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+            <state relative-caret-position="241">
+              <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1541914664860" expanded="true" signature="847:1120" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/get_gpa_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="30" column="78" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="78" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <marker date="1541917796920" expanded="true" signature="98:103" ph="..." />
-                <marker date="1541917796920" expanded="true" signature="1256:1265" ph="..." />
-                <marker date="1541917796920" expanded="true" signature="1400:2053" ph="..." />
+                <marker date="1541974885052" expanded="true" signature="998:1414" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataSource/uiuc-gpa-dataset-withGPA.csv">
+        <entry file="file://$PROJECT_DIR$/get_gpa_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+            <state relative-caret-position="357">
+              <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+                <marker date="1541974569097" expanded="true" signature="98:103" ph="..." />
+                <marker date="1541974569097" expanded="true" signature="1256:1265" ph="..." />
+                <marker date="1541974569097" expanded="true" signature="1308:1311" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,14 +118,21 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cs,225</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/Tests/unittest.csv" />
         <option value="$PROJECT_DIR$/get_gpa_data.py" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/Tests/test_api.py" />
       </list>
     </option>
   </component>
@@ -136,11 +161,6 @@
               <item name="fa18-cs242-final-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="fa18-cs242-final-project" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="fa18-cs242-final-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fa18-cs242-final-project" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -150,9 +170,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Tests" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -166,7 +187,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Unittests for test_api.TestAPI">
     <configuration name="fa18-cs242-final-project" type="Python.FlaskServer" factoryName="Flask server">
       <module name="fa18-cs242-final-project" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
@@ -182,6 +203,115 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for test_api.TestAPI" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="fa18-cs242-final-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api.TestAPI&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_api.TestAPI.test_get_courseNotFound" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="fa18-cs242-final-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api.TestAPI.test_get_courseNotFound&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_api.TestAPI.test_get_instructor1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="fa18-cs242-final-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api.TestAPI.test_get_instructor1&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_api.TestAPI.test_get_instructor2" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="fa18-cs242-final-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api.TestAPI.test_get_instructor2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_api.TestAPI.test_get_instructorNotFound" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="fa18-cs242-final-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api.TestAPI.test_get_instructorNotFound&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in Tests" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <module name="fa18-cs242-final-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Flask server.fa18-cs242-final-project" />
+      <item itemvalue="Python tests.Unittests in Tests" />
+      <item itemvalue="Python tests.Unittests for test_api.TestAPI" />
+      <item itemvalue="Python tests.Unittests for test_api.TestAPI.test_get_courseNotFound" />
+      <item itemvalue="Python tests.Unittests for test_api.TestAPI.test_get_instructorNotFound" />
+      <item itemvalue="Python tests.Unittests for test_api.TestAPI.test_get_instructor1" />
+      <item itemvalue="Python tests.Unittests for test_api.TestAPI.test_get_instructor2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests for test_api.TestAPI" />
+        <item itemvalue="Python tests.Unittests for test_api.TestAPI.test_get_instructor2" />
+        <item itemvalue="Python tests.Unittests for test_api.TestAPI.test_get_instructor1" />
+        <item itemvalue="Python tests.Unittests for test_api.TestAPI.test_get_instructorNotFound" />
+        <item itemvalue="Python tests.Unittests for test_api.TestAPI.test_get_courseNotFound" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -196,6 +326,38 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_test_api_TestAPI_test_get_courseName - 2018.11.11 at 16h 06m 17s.xml">
+      <configuration name="Unittests for test_api.TestAPI.test_get_courseName" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_api_TestAPI_test_get_courseNotFound - 2018.11.11 at 16h 06m 36s.xml">
+      <configuration name="Unittests for test_api.TestAPI.test_get_courseNotFound" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_api_TestAPI_test_get_courseNotFound - 2018.11.11 at 16h 09m 34s.xml">
+      <configuration name="Unittests for test_api.TestAPI.test_get_courseNotFound" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_api_TestAPI_test_get_courseNotFound - 2018.11.11 at 16h 11m 35s.xml">
+      <configuration name="Unittests for test_api.TestAPI.test_get_courseNotFound" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_api_TestAPI_test_get_courseNotFound - 2018.11.11 at 16h 17m 09s.xml">
+      <configuration name="Unittests for test_api.TestAPI.test_get_courseNotFound" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_api_TestAPI_test_get_instructorNotFound - 2018.11.11 at 16h 22m 49s.xml">
+      <configuration name="Unittests for test_api.TestAPI.test_get_instructorNotFound" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_api_TestAPI_test_get_instructor1 - 2018.11.11 at 16h 22m 53s.xml">
+      <configuration name="Unittests for test_api.TestAPI.test_get_instructor1" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_api_TestAPI - 2018.11.11 at 16h 26m 14s.xml">
+      <configuration name="Unittests for test_api.TestAPI" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_api_TestAPI_test_get_instructor2 - 2018.11.11 at 16h 27m 11s.xml">
+      <configuration name="Unittests for test_api.TestAPI.test_get_instructor2" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_api_TestAPI - 2018.11.11 at 16h 27m 38s.xml">
+      <configuration name="Unittests for test_api.TestAPI" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -207,29 +369,29 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2534413" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2574899" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.6797153" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.3291815" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="4" weight="0.3291815" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.3291815" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.78647685" />
-      <window_info anchor="bottom" id="TODO" order="9" weight="0.3291815" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.6797153" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.78647685" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.3291815" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32955465" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,33 +410,52 @@
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1541914664860" expanded="true" signature="847:1120" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataSource/uiuc-gpa-dataset-withGPA.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+          <caret column="96" lean-forward="true" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/get_gpa_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="30" column="78" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="78" />
+        <state relative-caret-position="357">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <marker date="1541917796920" expanded="true" signature="98:103" ph="..." />
-            <marker date="1541917796920" expanded="true" signature="1256:1265" ph="..." />
-            <marker date="1541917796920" expanded="true" signature="1400:2053" ph="..." />
+            <marker date="1541974569097" expanded="true" signature="98:103" ph="..." />
+            <marker date="1541974569097" expanded="true" signature="1256:1265" ph="..." />
+            <marker date="1541974569097" expanded="true" signature="1308:1311" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/unittest.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="11" column="106" lean-forward="true" selection-start-line="11" selection-start-column="83" selection-end-line="11" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/test_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <marker date="1541975348011" expanded="true" signature="381:2413" ph="..." />
+            <marker date="1541975348011" expanded="true" signature="415:870" ph="..." />
+            <marker date="1541975348011" expanded="true" signature="1534:2257" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1541974885052" expanded="true" signature="998:1414" ph="..." />
           </folding>
         </state>
       </provider>

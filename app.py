@@ -1,5 +1,4 @@
 from flask import *
-import csv
 import pandas as pd
 import get_gpa_data
 
@@ -25,7 +24,12 @@ def hello_world():
 # api/course/:subject/:number
 @app.route('/api/course/<string:Subject>/<int:Number>', methods=['GET'])
 def get_course_gpa(Subject, Number):
-    return jsonify(get_gpa_data.get_course_info(Subject.upper(), Number, df))
+    retval = get_gpa_data.get_course_info(Subject.upper(), Number, df)
+    if retval is None:
+        abort(404)
+        abort(Response("Cannot Find Course Info for " + Subject + " " + str(Number)))
+    else:
+        return jsonify(retval)
 
 
 @app.route('/api/testing', methods=['GET'])
@@ -35,7 +39,12 @@ def return_testing_message():
 
 @app.route('/api/instructor/<string:name>', methods=['GET'])
 def get_instructor_gpa_accurate(name):
-    return jsonify(get_gpa_data.get_instructor_info(name, df))
+    retval = get_gpa_data.get_instructor_info(name, df)
+    if retval is None:
+        abort(404)
+        abort(Response("Cannot Find Instructor Info for " + name))
+    else:
+        return jsonify(retval)
 
 
 if __name__ == '__main__':

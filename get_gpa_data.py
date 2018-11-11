@@ -32,7 +32,7 @@ def get_course_info(subject, number, df):
         retval['Instructors'] = instructor_course_gpa_list
         return retval
     else:
-        return abort(404)
+        return None
 
 
 # schema: {name, average_GPA, course_taught: []}
@@ -51,4 +51,4 @@ def get_instructor_info(name, df):
         retval['Course Taught'] = instructor_course_gpa_dict
         return retval
     else:
-        return abort(404)
+        return None
