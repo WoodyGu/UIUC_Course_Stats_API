@@ -3,7 +3,7 @@ import csv
 import get_gpa_data
 app = Flask(__name__)
 
-fd = open("dataSource/uiuc-gpa-dataset.csv", 'r')
+fd = open("dataSource/uiuc-gpa-dataset-withGPA.csv", 'r')
 csvReader = csv.reader(fd, delimiter=',')
 
 
