@@ -24,7 +24,7 @@ def hello_world():
 # api/course/:subject/:number
 @app.route('/api/course/<string:Subject>/<int:Number>', methods=['GET'])
 def get_course_gpa(Subject, Number):
-    return jsonify(get_gpa_data.get_course_info(Subject, Number, df))
+    return jsonify(get_gpa_data.get_course_info(Subject.upper(), Number, df))
 
 
 @app.route('/api/testing', methods=['GET'])
