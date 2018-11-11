@@ -4,6 +4,8 @@
     <list default="true" id="2341223a-77d2-4999-9081-31de7f9ae66b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_gpa_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_gpa_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/fa18_cs242_final_project$fa18_cs242_final_project.coverage" NAME="fa18-cs242-final-project Coverage Results" MODIFIED="1541904978674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/fa18_cs242_final_project$fa18_cs242_final_project.coverage" NAME="fa18-cs242-final-project Coverage Results" MODIFIED="1541909816475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-821765195">
@@ -26,27 +28,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="512" />
+          <entry key="py" value="1457" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="512" />
+          <entry key="Python" value="1457" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Procfile" value="1" />
           <entry key="cfg" value="1" />
-          <entry key="csv" value="2" />
+          <entry key="csv" value="6" />
           <entry key="py" value="1" />
-          <entry key="txt" value="3" />
+          <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Ini" value="1" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="PLAIN_TEXT" value="11" />
           <entry key="Python" value="1" />
         </counts>
       </usages-collector>
@@ -57,31 +59,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+            <state relative-caret-position="129">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
-                <marker date="1541904859820" expanded="true" signature="379:382" ph="..." />
-                <marker date="1541904859820" expanded="true" signature="455:479" ph="..." />
+                <element signature="e#0#19#0" expanded="true" />
+                <marker date="1541909280822" expanded="true" signature="703:776" ph="..." />
+                <marker date="1541909280822" expanded="true" signature="774:776" ph="..." />
+                <marker date="1541909280822" expanded="true" signature="849:873" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dataSource/uiuc-gpa-dataset-withGPA.csv">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/get_gpa_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+                <marker date="1541909814927" expanded="true" signature="98:103" ph="..." />
+                <marker date="1541909814927" expanded="true" signature="890:895" ph="..." />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/get_gpa_data.py">
+        <entry file="file://$PROJECT_DIR$/dataSource/uiuc-gpa-dataset-withGPA.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <marker date="1541895097194" expanded="true" signature="78:83" ph="..." />
-              </folding>
+            <state relative-caret-position="21">
+              <caret line="1" column="21" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -102,8 +110,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/get_gpa_data.py" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/get_gpa_data.py" />
       </list>
     </option>
   </component>
@@ -113,7 +121,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="15" />
     <option name="y" value="30" />
     <option name="width" value="1890" />
@@ -205,7 +213,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2534413" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2534413" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
@@ -216,7 +224,7 @@
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.3291815" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.3291815" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.20284697" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.3291815" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
@@ -244,31 +252,37 @@
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_gpa_data.py">
+    <entry file="file://$PROJECT_DIR$/dataSource/uiuc-gpa-dataset-withGPA.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <marker date="1541895097194" expanded="true" signature="78:83" ph="..." />
-          </folding>
+        <state relative-caret-position="21">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        <state relative-caret-position="129">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <marker date="1541904859820" expanded="true" signature="379:382" ph="..." />
-            <marker date="1541904859820" expanded="true" signature="455:479" ph="..." />
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1541909280822" expanded="true" signature="703:776" ph="..." />
+            <marker date="1541909280822" expanded="true" signature="774:776" ph="..." />
+            <marker date="1541909280822" expanded="true" signature="849:873" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource/uiuc-gpa-dataset-withGPA.csv">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/get_gpa_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1541909814927" expanded="true" signature="98:103" ph="..." />
+            <marker date="1541909814927" expanded="true" signature="890:895" ph="..." />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
