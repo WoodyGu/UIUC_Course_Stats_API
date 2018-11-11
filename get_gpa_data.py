@@ -25,7 +25,16 @@ def get_course_info(subject, number, df):
         retval['Number'] = number
         retval['Course Title'] = all_offerings['Course Title'].values.tolist()[0]
         retval['Average GPA'] = average_gpa
-        retval['Instructors'] = instructor_course_gpa.to_dict()
+        instructor_course_gpa_dict = instructor_course_gpa.to_dict()
+        instructor_course_gpa_list = []
+        for elem in instructor_course_gpa_dict.items():
+            instructor_course_gpa_list.append({elem[0]: elem[1]})
+        retval['Instructors'] = instructor_course_gpa_list
         return retval
     else:
         return abort(404)
+
+
+# schema: {name, average_GPA, course_taught: []}
+def get_instructor_info():
+    return None

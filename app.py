@@ -29,6 +29,11 @@ def get_course_gpa(Subject, Number):
 
 @app.route('/api/testing', methods=['GET'])
 def return_testing_message():
+    return jsonify("200 OK")
+
+
+@app.route('/api/instructor/<string:name>', methods=['GET'])
+def get_instructor_gpa(name):
     return "200 OK!"
 
 
