@@ -111,6 +111,12 @@ def generate_depart_list(df):
 
 def create_depart_courses(department, df):
     is_target = (df['Subject'] == department)
-    department_courses = df[is_target][['Subject', 'Number', 'Course_Title']]
-    department_courses_no_dup = department_courses.drop_duplicates().to_dict('records')
-    return department_courses_no_dup
+    department_courses = df[is_target][['Subject', 'Number', 'Course_Title', 'Average_Grade']]
+    if not department_courses.empty: 
+        # department_courses_no_dup = department_courses.drop_duplicates().to_dict('records')
+        grouped = department_courses['Average_Grade'].groupby([department_courses['Subject'], department_courses['Number'], department_courses['Course_Title']])
+        department_course_gpa = grouped.mean().round(2).reset_index()
+        retval = department_course_gpa.to_dict('record')
+        return retval
+    else:
+        return None
