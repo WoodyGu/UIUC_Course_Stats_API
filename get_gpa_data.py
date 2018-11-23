@@ -25,6 +25,7 @@ def get_course_info(subject, number, df):
         retval['Number'] = number
         retval['Course_Title'] = all_offerings['Course_Title'].values.tolist()[0]
         retval['Average_GPA'] = average_gpa
+        retval['Grade_Distribution'] = generate_grade_distbution_dict(all_offerings)
         instructor_course_gpa_dict = instructor_course_gpa.to_dict()
         instructor_course_gpa_list = []
         for elem in instructor_course_gpa_dict.items():

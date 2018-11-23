@@ -12,8 +12,10 @@ df = pd.read_csv("dataSource/uiuc-gpa-dataset-withGPA.csv")
 df['Term'] = df['Term'].astype('str')
 df['YearTerm'] = df['YearTerm'].astype('str')
 df['Subject'] = df['Subject'].astype('str')
-df['Course_Title'] = df['Course_Title'].astype('str')
 df['Primary_Instructor'] = df['Primary_Instructor'].astype('str')
+df['Course_Title'] = df['Course_Title'].astype('str')
+df['Number'] = df['Number'].astype('str')
+
 
 
 @app.route('/')
@@ -22,7 +24,7 @@ def hello_world():
 
 
 # api/course/:subject/:number
-@app.route('/api/course/<string:Subject>/<int:Number>', methods=['GET'])
+@app.route('/api/course/<string:Subject>/<string:Number>', methods=['GET'])
 def get_course_gpa(Subject, Number):
     retval = get_gpa_data.get_course_info(Subject.upper(), Number, df)
     if retval is None:
@@ -32,7 +34,7 @@ def get_course_gpa(Subject, Number):
         return jsonify(retval)
 
 
-@app.route('/api/course/detail/<string:Subject>/<int:Number>/<string:Instructor>', methods=['GET'])
+@app.route('/api/course/detail/<string:Subject>/<string:Number>/<string:Instructor>', methods=['GET'])
 def get_course_detail(Subject, Number, Instructor):
     retval = get_gpa_data.get_course_gpa_detail(Subject.upper(), Number, Instructor, df)
     if retval is None:
