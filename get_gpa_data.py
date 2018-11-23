@@ -108,3 +108,9 @@ def generate_depart_list(df):
     department_list = df['Subject']
     retval = department_list.drop_duplicates().tolist()
     return retval
+
+def create_depart_courses(department, df):
+    is_target = (df['Subject'] == department)
+    department_courses = df[is_target][['Subject', 'Number', 'Course_Title']]
+    department_courses_no_dup = department_courses.drop_duplicates().to_dict('records')
+    return department_courses_no_dup

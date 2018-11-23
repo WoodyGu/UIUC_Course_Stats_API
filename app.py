@@ -65,6 +65,15 @@ def get_department_list():
     else:
         return jsonify(retval)
 
+@app.route('/api/subjects/<string:department>', methods=['GET'])
+def get_department_courses(department):
+    retval = get_gpa_data.create_depart_courses(department.upper(), df)
+    if retval is None:
+        abort(404)
+        abort(Response("Cannot Find Instructor Info for " + name))
+    else:
+        return jsonify(retval)
+
 
 if __name__ == '__main__':
     app.run()
