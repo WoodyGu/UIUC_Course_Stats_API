@@ -103,3 +103,8 @@ def get_instructor_info(name, df):
         return retval
     else:
         return None
+
+def generate_depart_list(df):
+    department_list = df['Subject']
+    retval = department_list.drop_duplicates().tolist()
+    return retval

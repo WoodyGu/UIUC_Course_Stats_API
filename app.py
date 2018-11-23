@@ -56,6 +56,15 @@ def get_instructor_gpa_accurate(name):
     else:
         return jsonify(retval)
 
+@app.route('/api/subjects', methods=['GET'])
+def get_department_list():
+    retval = get_gpa_data.generate_depart_list(df)
+    if retval is None:
+        abort(404)
+        abort(Response("Cannot Find Instructor Info for " + name))
+    else:
+        return jsonify(retval)
+
 
 if __name__ == '__main__':
     app.run()
