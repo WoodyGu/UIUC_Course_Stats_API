@@ -122,8 +122,15 @@ def create_depart_courses(department, df):
     else:
         return None
 
+def check_course(course_info, query):
+    in_subject = query.lower() in (course_info.get('Subject').lower() + course_info.get('Number').lower())
+    in_title = query.lower() in course_info.get('Course_Title').lower()
+    return in_subject or in_title
+
 def query_course(query, df):
-    pass
+    course_list = df[['Subject', 'Number', 'Course_Title']].drop_duplicates().to_dict('records')
+    selected_courses = filter(lambda course: check_course(course, query),course_list)
+    return list(selected_courses)
 
 def query_instructor(query, df):
     all_instructor = df['Primary_Instructor'].drop_duplicates().tolist()

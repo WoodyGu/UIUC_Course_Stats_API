@@ -82,7 +82,7 @@ def search_courses(query):
     retval = get_gpa_data.query_course(query, df)
     if retval is None:
         abort(404)
-        abort(Response("Cannot Find Instructor Info for " + name))
+        abort(Response("Cannot Find Course Info for " + query))
     else:
         return jsonify(retval)
 
@@ -91,7 +91,7 @@ def search_instructors(query):
     retval = get_gpa_data.query_instructor(query, df)
     if retval is None:
         abort(404)
-        abort(Response("Cannot Find Instructor Info for " + name))
+        abort(Response("Cannot Find Instructor Info for " + query))
     else:
         return jsonify(retval)
 
