@@ -77,5 +77,23 @@ def get_department_courses(department):
         return jsonify(retval)
 
 
+@app.route('/api/search/course/<string:query>', methods=['GET'])
+def search_courses(query):
+    retval = get_gpa_data.query_course(query, df)
+    if retval is None:
+        abort(404)
+        abort(Response("Cannot Find Instructor Info for " + name))
+    else:
+        return jsonify(retval)
+
+@app.route('/api/search/instructor/<string:query>', methods=['GET'])
+def search_instructors(query):
+    retval = get_gpa_data.query_instructor(query, df)
+    if retval is None:
+        abort(404)
+        abort(Response("Cannot Find Instructor Info for " + name))
+    else:
+        return jsonify(retval)
+
 if __name__ == '__main__':
     app.run()

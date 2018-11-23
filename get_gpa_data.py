@@ -121,3 +121,18 @@ def create_depart_courses(department, df):
         return retval
     else:
         return None
+
+def query_course(query, df):
+    pass
+
+def query_instructor(query, df):
+    all_instructor = df['Primary_Instructor'].drop_duplicates().tolist()
+    # if not selected_instructors.empty:
+    #     retval = []
+    #     for elem in selected_instructors.drop_duplicates.tolist():
+    #         retval.append(get_instructor_info(elem, selected_instructors))
+    # else:
+    #     return None
+    selected_instructors = filter(lambda inst: query.lower() in inst.lower(), all_instructor)
+    return list(selected_instructors)
+        
