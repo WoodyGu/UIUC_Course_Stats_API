@@ -2,7 +2,7 @@ import csv
 import pandas as pd
 from flask import *
 
-
+# returns the first row in dataframe
 def get_first_row(csvReader):
     retval = ""
     for row in csvReader:
@@ -17,6 +17,7 @@ def get_course_info(subject, number, df):
     all_offerings = df[is_target]
     if not all_offerings.empty:
         average_gpa = round(all_offerings['Average_Grade'].mean(), 2)
+        total_student_count = all_offerings['students_count'].sum()
         grouped = all_offerings['Average_Grade'].groupby(all_offerings['Primary_Instructor'])
         instructor_course_gpa = grouped.mean().round(2)
         retval = {}
@@ -26,6 +27,7 @@ def get_course_info(subject, number, df):
         retval['Course_Title'] = all_offerings['Course_Title'].values.tolist()[0]
         retval['Average_GPA'] = average_gpa
         retval['Grade_Distribution'] = generate_grade_distbution_dict(all_offerings)
+        retval['Total_Students'] = int(total_student_count)
         instructor_course_gpa_dict = instructor_course_gpa.to_dict()
         instructor_course_gpa_list = []
         for elem in instructor_course_gpa_dict.items():
@@ -35,7 +37,7 @@ def get_course_info(subject, number, df):
     else:
         return None
 
-
+# maps and sums the grades
 def generate_grade_distbution_dict(all_offerings):
     total_Apls = all_offerings['A+'].sum().astype('str')
     total_A = all_offerings['A'].sum().astype('str')
@@ -66,12 +68,13 @@ def generate_grade_distbution_dict(all_offerings):
     distribution['F'] = int(total_F)
     return distribution
 
-
+# get GPA datail of a course
 def get_course_gpa_detail(subject, number, instructor, df):
     is_target = (df['Subject'] == subject) & (df['Number'] == number) & (df['Primary_Instructor'] == instructor)
     all_offerings = df[is_target]
     if not all_offerings.empty:
         average_gpa = round(all_offerings['Average_Grade'].mean(), 2)
+        total_student_count = all_offerings['students_count'].sum()
         retval = {}
         retval['Status'] = '200 OK'
         retval['Subject'] = subject
@@ -79,6 +82,7 @@ def get_course_gpa_detail(subject, number, instructor, df):
         retval['Course_Title'] = all_offerings['Course_Title'].values.tolist()[0]
         retval['Average_GPA'] = average_gpa
         retval['Instructors'] = instructor
+        retval['Total_Students'] = int(total_student_count)
         retval['Grade_Distribution'] = generate_grade_distbution_dict(all_offerings)
         retval['Offered_Semesters'] = all_offerings['YearTerm'].drop_duplicates().values.tolist()
         print(retval)
@@ -88,6 +92,7 @@ def get_course_gpa_detail(subject, number, instructor, df):
 
 
 # schema: {name, average_GPA, course_taught: []}
+# get information of a instructor
 def get_instructor_info(name, df):
     is_target = df['Primary_Instructor'] == name
     all_taught = df[is_target]
@@ -105,33 +110,44 @@ def get_instructor_info(name, df):
     else:
         return None
 
+# get a list of all the departments in our school
 def generate_depart_list(df):
     department_list = df['Subject']
     retval = department_list.drop_duplicates().tolist()
     return retval
 
+# get all the courses from a department
 def create_depart_courses(department, df):
     is_target = (df['Subject'] == department)
-    department_courses = df[is_target][['Subject', 'Number', 'Course_Title', 'Average_Grade']]
+    department_courses = df[is_target][['Subject', 'Number', 'Course_Title', 'Average_Grade', 'students_count']]
     if not department_courses.empty: 
         # department_courses_no_dup = department_courses.drop_duplicates().to_dict('records')
-        grouped = department_courses['Average_Grade'].groupby([department_courses['Subject'], department_courses['Number'], department_courses['Course_Title']])
-        department_course_gpa = grouped.mean().round(2).reset_index()
-        retval = department_course_gpa.to_dict('record')
+        # grouped = department_courses['Average_Grade'].groupby([department_courses['Subject'], department_courses['Number'], department_courses['Course_Title']])
+        # department_course_gpa = grouped.mean().round(2).reset_index()
+        # retval = department_course_gpa.to_dict('record')
+        # return retval
+        grouped = department_courses.groupby([department_courses['Subject'], department_courses['Number'], department_courses['Course_Title']])
+        courses = grouped.agg({'Average_Grade':'mean', 'students_count':'sum'})
+        courses = courses.reset_index() 
+        courses['Average_Grade'] = courses['Average_Grade'].round(2)
+        retval = courses.to_dict('record')
         return retval
     else:
         return None
 
+# determines of the course statisfies the query
 def check_course(course_info, query):
     in_subject = query.lower() in (course_info.get('Subject').lower() + course_info.get('Number').lower())
     in_title = query.lower() in course_info.get('Course_Title').lower()
     return in_subject or in_title
 
+# returns all the courses that satisfies the query
 def query_course(query, df):
     course_list = df[['Subject', 'Number', 'Course_Title']].drop_duplicates().to_dict('records')
     selected_courses = filter(lambda course: check_course(course, query),course_list)
     return list(selected_courses)
 
+# return all the instructors that satisfies the query
 def query_instructor(query, df):
     all_instructor = df['Primary_Instructor'].drop_duplicates().tolist()
     # if not selected_instructors.empty:
