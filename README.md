@@ -2,6 +2,7 @@
 ## An API returning the statistics of every courses in UIUC
 
 ## Base URL: https://fa18-cs242-finalproject-api.herokuapp.com/
+data comes from Professor Wade Fagen's repository: https://github.com/wadefagen/datasets
 
 GET /api/course/<string:Subject>/<string:Number>
 Example https://fa18-cs242-finalproject-api.herokuapp.com/api/course/cs/225
